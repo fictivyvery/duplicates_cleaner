@@ -12,7 +12,7 @@ class FuzzyWords(Enum):
     PLAN = "תוכנית"
     BACKGROUND = "ברקע"
     REPETATIVE_ADMISSIONS = "אישפוזים רצנטיים"
-    "במיון"
+    EMERGENCY_DEPARTMENT = "במיון"
     IN_DEPARTMENT = "במחלקה"
     SIDE_CHECKS = "בדיקות עזר"
     BACKGROUND_DISEASE = "מחלות רקע"
@@ -22,5 +22,3 @@ class FuzzyWords(Enum):
     VITAL_SIGNS = "סימנים חיוניים"
 
 
-df = pd.read_csv('output1.csv', encoding='utf-8', error_bad_lines=False, quoting=csv.QUOTE_NONE)
-df.to_csv('new_data12.csv', encoding='utf-8-sig')
